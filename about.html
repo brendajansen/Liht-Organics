@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Welcome</title>
+
+      <!-- css file -->
+      <link rel="stylesheet" type="text/css" href="css/about.css"/>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- Skrollr script -->
+      <script src="js/skrollr.js"></script>
+      <script src="js/_main.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+      <div class="container welcome">
+          <nav class="navbar">
+              <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" width="150px;" />
+                        </a>
+                     </div>
+
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html" class="hover">HOME</a></li>
+                      <li><a href="try-on-asian.html" class="hover">TRY-ON</a></li>
+                      <li><a href="contact.html" class="hover">CONTACT</a></li>
+                      <li><a href="about.html" class="active">ABOUT</a></li>
+                  </ul>
+
+                  <!-- START OF OVERLAY NAV -->
+                  <div id="overlayNav" class="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                        <li class="overlay-li">
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="try-on-asian.html">Try-On</a>
+                        </li>
+                        <li>
+                          <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                          <a href="about.html">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <div id="hamburger-icon" class="hamburger-container" style="font-size:30px;cursor:pointer">
+                      <span class="bar1"></span>
+                      <span class="bar2"></span>
+                      <span class="bar3"></span>
+                  </div>
+                  <!-- END OF OVERLAY NAV -->
+              </div>
+          </nav>
+
+
+          <div class="about">
+              <div class="about-text">
+                  <a class="ad" id="ad1" href="index.html">
+                      <img src="ads/animated-skyscraper.gif" />
+                  </a>
+
+                  <div class="left flex-container">
+                      <a class="ad" id="ad2" href="index.html">
+                          <img src="ads/1.png" width="200px"/>
+                      </a>
+                    </br>
+
+                      <a class="ad" id="ad3" href="index.html">
+                          <img src="ads/2.png" width="200px%"/>
+                      </a>
+                      </br>
+
+                      <a class="ad" id="ad4" href="index.html">
+                          <img src="ads/3.png" width="200px%"/>
+                      </a>
+                  </div>
+
+                  <h1 id="heading">ABOUT US</h1>
+                  <h2 class="heading2">No Greenwashing</h2>
+                      <p class="text">There are many brands that will cleverly use words like organic, natural, herbal, eco-friendly, and earth-friendly in their brand names, but in reality, they do not use natural or organic ingredients at all.
+
+                      This practice is known as Greenwashing, and may deceive consumers who are unaware of what to look out for. Simply put, brands will label their product as natural or organic but in reality, will only use a small percentage of these natural or organic ingredients in their formulations.
+
+                      Our formulations are made with up to 90% USDA-certified organic ingredients, and 100% natural content.</p>
+
+                  <h2 class="heading2">For You And The Planet</h2>
+                      <p class="text">We assure you that you are also investing in your long term health through the use of quality products that are: </br>
+
+                      – Made with a high percentage of USDA-certified organic ingredients that are sourced ethically and are farmed responsibly –
+                      </br>
+
+                      – Cruelty-Free –
+                      </br>
+
+                      – Vegan –
+                      </br>
+
+                      – Free of nano-particles or harmful chemicals –
+                      </br>
+
+                      Please read the ingredients label to ensure that you are not allergic to any of the natural ingredients used.</p>
+
+              </div>
+
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        // START OF OVERLAY NAV SCRIPT
+        $('#hamburger-icon').click(function() {
+            $(this).toggleClass('active');
+            $('#overlayNav').toggleClass('open').show();
+        });
+
+        $('#overlayNav li').on('click', function(){
+            $('#overlayNav').hide();
+            $('#overlayNav').toggleClass('open');
+            $('#hamburger-icon').removeClass("active");
+        });
+        // END OF OVERLAY NAV SCRIPT
+
+
+
+      </script>
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/imagesloaded.js"></script>
+      <script src="js/skrollr.js"></script>
+      <script src="js/_main.js"></script>
+  </body>
+</html>

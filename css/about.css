@@ -1,0 +1,337 @@
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #AEB7AE;
+  margin:0;
+}
+
+
+main {
+	overflow-x: hidden;
+}
+
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 700px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+	.hsContent h2  {
+		color: #fff8de;
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		font-size: 35px;
+		line-height: 38px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+
+
+    /**** START OF NAVBAR STYLING *****/
+    .welcome{
+      margin:0;
+      padding:0 !important;
+      background-color: #AEB7AE;
+      width: 100% !important;
+      height: 100%;
+    }
+
+    .welcome .navbar{
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .welcome .navbar .navbar-nav{
+      list-style: none;
+      right: 0;
+      margin-right: 30px;
+    }
+
+    .welcome .navbar .navbar-nav li{
+      position: relative;
+    }
+
+    .welcome .navbar .navbar-nav li a{
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 0.85vw;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-decoration: none;
+      text-align: center;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 10px 16px 0;
+    }
+
+    .welcome .navbar .navbar-nav li a:hover:after, .welcome .navbar .navbar-nav li a:focus:after, .welcome .navbar .navbar-nav li a:active:after {
+      width: 100%;
+    }
+
+    .welcome .navbar .navbar-nav li a:hover{
+      background: none;
+    }
+
+    .welcome .navbar .navbar-nav li .active{
+      border-bottom: white solid 2px;
+      width: 60%;
+      padding-right: 0;
+      padding-bottom: 0px;
+    }
+
+    .welcome .navbar .navbar-nav li .hover:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      transform: translateX(-50%);
+      height: 2px;
+      background: #FFF;
+      transition: .35s;
+    }
+
+    /**** END OF NAVBAR STYLING *****/
+
+
+    /***** START OF OVERLAY NAV STYLING ******/
+    .overlay {
+      position: fixed;
+      background: #1a1a1a;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s; height .35s;
+      z-index: 100;
+    }
+
+    .overlay.open{
+      opacity: .9;
+      visibility: visible;
+      height: 100%;
+    }
+
+    .overlay.open li{
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .25s;
+    }
+
+    .overlay.open li:nth-of-type(2){
+      animation-delay: .35s;
+    }
+
+    .overlay.open li:nth-of-type(3){
+      animation-delay: .45s;
+    }
+
+    .overlay.open li:nth-of-type(4){
+      animation-delay: .55s;
+    }
+
+    .overlay nav{
+      position: relative;
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      font-family: 'EB Garamond', serif;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .overlay ul{
+      list-style:none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%;
+    }
+
+    .overlay ul li{
+      display: ;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+    }
+
+    .overlay ul li a{
+      display: ;
+      position: relative;
+      color: white;
+      text-decoration: none;
+      overflow: hidden;
+    }
+
+    .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+      width: 100%;
+    }
+
+    .overlay ul li a:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      transform: translateX(-50%);
+      height: 3px;
+      background: #FFF;
+      transition: .35s;
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        left: 20%;
+      }
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
+
+    /***** END OF OVERLAY NAV STYLING ******/
+
+
+
+    /***** START OF HAMBURGER STYLING *****/
+    .hamburger-container{
+      position: fixed;
+      top: 6.5%;
+      right: 8%;
+      width: 35px;
+      height: 27px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: opacity .25s ease;
+    }
+
+    .hamburger-container:hover {
+      opacity: 0.7;
+    }
+
+      /*** START OF styling the hamburger when it is active (clicked) ***/
+    .hamburger-container.active .bar1{
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: white;
+    }
+
+    .hamburger-container.active .bar2{
+      opacity: 0;
+      background: white;
+    }
+
+    .hamburger-container.active .bar3 {
+      transform: translateY(-3px) translateX(0) rotate(-45deg);
+      background: white;
+    }
+      /*** END OF styling the hamburger when it is active (clicked) ***/
+
+    .hamburger-container span{
+      background: white;
+      border: none;
+      height: 2px;
+      width: 80%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.35s ease;
+      cursor: pointer;
+    }
+
+    .hamburger-container span:nth-of-type(2) {
+      top:7px;
+    }
+
+    .hamburger-container span:nth-of-type(3) {
+      top: 14px;
+    }
+    /***** END OF HAMBURGER STYLING *****/
+
+
+
+		/***** START OF ABOUT TEXT STYLING ******/
+		.left{
+			float: left;
+			width: 200px;
+			display: flex;
+			flex-direction: column;
+			margin-right: 50px;
+		}
+
+		.flex-container{
+			height: 600px;
+			padding:0;
+		}
+
+		.ad{
+			pointer: cursor;
+		}
+		#ad1{
+			float: right;
+			display: inline-block;
+			margin-left: 50px;
+		}
+		#heading{
+			font-family: "Source Sans Pro";
+			font-size: 20px;
+			letter-spacing: 5px;
+			font-weight: 600;
+			color:white;
+			text-align: center;
+			margin-top: 100px;
+			padding-top: 50px;
+		}
+
+		.heading2{
+			font-family: "Playfair Display";
+			font-size: 25px;
+			letter-spacing: 5px;
+			font-weight: 500;
+			color:white;
+			text-align: center;
+			margin: 50px 50px 0;
+		}
+
+		.text{
+			font-family: "Source Sans Pro";
+			font-size: 14px;
+			letter-spacing: 2px;
+			font-weight: 300;
+			color:white;
+			text-align: center;
+			margin: 50px 50px 0;
+		}
+
+
+		/***** START OF ABOUT TEXT STYLING ******/

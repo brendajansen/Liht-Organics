@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+  	<head>
+  	    <meta charset="utf-8">
+  		  <meta name="viewport" content="width=device-width, initial-scale=1">
+  		  <script src="jquery-1.7.1.min.js"> </script>
+  		  <link rel="stylesheet" type="text/css" href="css/style.css">
+  	</head>
+
+    <style>
+        #configuratorbox{
+          background-color: #A6B3B3;
+        	position: absolute;
+        	margin: 0px;
+        	height: 650px;
+        	width: 1300px;
+        }
+
+        #asian, #white, #medium, #brown, #black, #ebony{
+          position: absolute;
+          top:30px;
+          left:30px;
+          z-index:100;
+        }
+
+        .lash1{
+          position: absolute;
+          top:30px;
+          left:30px;
+          z-index:200;
+        }
+
+
+
+    </style>
+
+
+  	<body>
+        <div id="configuratorbox">
+            <div class="models">
+                <img class="model" id="asian" src="models/asianmodel.png" width="495;" height="465;" />
+                <img class="model" id="white" src="models/whitemodel.jpg" />
+                <img class="model" id="medium" src="models/mediummodel.jpg" />
+                <img class="model" id="brown" src="models/brownmodel.jpg" />
+                <img class="model" id="black" src="models/blackmodel.jpg" />
+                <img class="model" id="ebony" src="models/ebonymodel.jpg" />
+            </div>
+
+            <div class="mascara1">
+                <img class="lash1" id="asianlash1" src="lashes/asian-lash1.png" width="495;" height="465;"/>
+                <img class="lash1" id="whitelash1" src="lashes/white-lash1.png" />
+                <img class="lash1" id="mediumlash1" src="lashes/medium-lash1.png" />
+                <img class="lash1" id="brownlash1" src="lashes/brown-lash1.png" />
+                <img class="lash1" id="blacklash1"src="lashes/black-lash1.png" />
+                <img class="lash1" id="ebonylash1" src="lashes/ebony-lash1.png" />
+            </div>
+
+            <div class="buttons">
+              <button id="mascara1button">Red</button>
+              <button id="mascara2button">Orange</button>
+              <button id="butt_4">Red</button>
+              <button id="butt_5">Orange</button>
+              <button id="butt_6">Blue</button>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript">
+
+            //this is for the default price when u first load the page (red shirt)//
+            var mascaraprice = 0;
+            document.getElementById("mascarapricetag").innerHTML = shirtprice;
+
+            var lipstickprice = 0;
+            document.getElementById("lipstickpricetag").innerHTML = trousersprice;
+
+            var totalprice = mascaraprice + lipstickprice;
+            document.getElementById("totalpricetag").innerHTML = totalprice;
+
+            $("#asian").show();
+            $("#white").hide();
+            $("#medium").hide();
+            $("#brown").hide();
+            $("#black").hide();
+            $("#ebony").hide();
+
+            $("#asianlash1").hide();
+            $("#whitelash1").hide();
+            $("#mediumlash1").hide();
+            $("#brownlash1").hide();
+            $("#blacklash1").hide();
+            $("#ebonylash1").hide();
+
+
+            $("#trousers_red").show();
+            $("#trousers_orange").hide();
+            $("#trousers_blue").hide();
+
+
+            $("#butt_1").click(function() {
+                $("#shirt_men_red").show();
+                $("#shirt_men_orange").hide();
+                $("#shirt_men_blue").hide();
+                shirtprice = 20;
+                totalprice = shirtprice + trousersprice;
+                document.getElementById("shirtpricetag").innerHTML = shirtprice;
+                document.getElementById("totalpricetag").innerHTML = totalprice;
+            });
+
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Welcome</title>
+
+      <!-- css file -->
+      <link rel="stylesheet" type="text/css" href="css/home-style.css"/>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- Skrollr script -->
+      <script src="js/skrollr.js"></script>
+      <script src="js/_main.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+      <div class="container welcome">
+          <nav class="navbar">
+              <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" width="150px;" />
+                        </a>
+                     </div>
+
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html" class="active">HOME</a></li>
+                      <li><a href="try-on-asian.html" class="hover">TRY-ON</a></li>
+                      <li><a href="contact.html" class="hover">CONTACT</a></li>
+                      <li><a href="about.html" class="hover">ABOUT</a></li>
+                  </ul>
+
+                  <!-- START OF OVERLAY NAV -->
+                  <div id="overlayNav" class="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                        <li class="overlay-li">
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="try-on-asian.html">Try-On</a>
+                        </li>
+                        <li>
+                          <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                          <a href="about.html">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <div id="hamburger-icon" class="hamburger-container" style="font-size:30px;cursor:pointer">
+                      <span class="bar1"></span>
+                      <span class="bar2"></span>
+                      <span class="bar3"></span>
+                  </div>
+                  <!-- END OF OVERLAY NAV -->
+              </div>
+          </nav>
+
+
+          <div class="zoomvid-container">
+                  <video class="welcomevid" id="zoomvid" src="videos/welcomevidfinal.mp4" autoplay muted loop width="60%"></video>
+          </div>
+
+          <div class="welcome-text">
+              <h1>Natural. Organic. <br />
+                  Safe.</h1>
+              <h2>Only the best for your skin.</h2>
+          </div>
+      </div>
+
+      <div class="slide2">
+          <div class="img-container"></div>
+              <div class="scroll">
+                  <div class="right1">
+                      <img src="images/scroll-mascarafinal.png" width="300px;"/>
+                      <p>Infinity Lash Mascara</p>
+                      <button href="#">SHOP NOW</button>
+                  </div>
+              </div>
+
+              <div class="scroll">
+                  <div class="right2">
+                      <img src="images/foundationfinal.png" width="300px;"/>
+                      <p>Youth Elixir Liquid Foundation</p>
+                      <button href="#">SHOP NOW</button>
+                  </div>
+              </div>
+          <div class="img-container"></div>
+      </div>
+
+      <div class="slide3">
+          <a href="try-on-asian.html">
+              <img class="ad" id="animated1" src="ads/animated-billboard.gif" />
+          </a>
+
+          <a href="index.html">
+          <img class="ad" id="animated2" src="ads/animated-rect.gif" width="400px"/>
+          </a>
+
+      </div>
+
+
+
+
+
+
+      <script>
+        // START OF OVERLAY NAV SCRIPT
+        $('#hamburger-icon').click(function() {
+            $(this).toggleClass('active');
+            $('#overlayNav').toggleClass('open').show();
+        });
+
+        $('#overlayNav li').on('click', function(){
+            $('#overlayNav').hide();
+            $('#overlayNav').toggleClass('open');
+            $('#hamburger-icon').removeClass("active");
+        });
+        // END OF OVERLAY NAV SCRIPT
+
+
+
+      </script>
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/imagesloaded.js"></script>
+      <script src="js/skrollr.js"></script>
+      <script src="js/_main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Welcome</title>
+
+      <!-- css file -->
+      <link rel="stylesheet" type="text/css" href="css/tryon.css"/>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- Skrollr script -->
+      <script src="js/skrollr.js"></script>
+      <script src="js/_main.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+      <section class="container slide1">
+          <nav class="navbar">
+              <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" width="150px;" />
+                        </a>
+                     </div>
+
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html" class="hover">HOME</a></li>
+                      <li><a href="try-on-asian.html" class="active">TRY-ON</a></li>
+                      <li><a href="contact.html" class="hover">CONTACT</a></li>
+                      <li><a href="about.html" class="hover">ABOUT</a></li>
+                  </ul>
+
+                  <!-- START OF OVERLAY NAV -->
+                  <div id="overlayNav" class="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                        <li class="overlay-li">
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="try-on-asian.html">Try-On</a>
+                        </li>
+                        <li>
+                          <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                          <a href="about.html">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <div id="hamburger-icon" class="hamburger-container" style="font-size:30px;cursor:pointer">
+                      <span class="bar1"></span>
+                      <span class="bar2"></span>
+                      <span class="bar3"></span>
+                  </div>
+                  <!-- END OF OVERLAY NAV -->
+              </div>
+          </nav>
+
+
+          <div id="configuratorbox">
+              <div class="model">
+                  <img class="model" id="asian" src="models/blackmodel.jpg" width="495;" height="465;" />
+              </div>
+
+              <!-- START OF CHOOSING MODEL ICONS -->
+              <div class="choose-model flex-container">
+                  <a class="modelbutt" id="asianbutt" href="try-on-asian.html">
+                    <img class="choose" src="models/asianmodel.png" width="110px"/>
+                  </a>
+
+                  <a class="modelbutt" id="whitebutt" href="try-on-white.html">
+                    <img class="choose" src="models/whitemodel.jpg" width="110px"/>
+                  </a>
+
+                  <a class="modelbutt" id="mediumbutt" href="try-on-medium.html">
+                    <img class="choose" src="models/mediummodel.jpg"
+                    width="110px"/>
+                  </a>
+
+                  <a class="modelbutt" id="brownbutt" href="try-on-brown.html">
+                    <img class="choose" src="models/brownmodel.jpg"
+                    width="110px"/>
+                  </a>
+
+                  <a class="modelbutt" id="blackbutt" href="try-on-black.html">
+                    <img class="choose" src="models/blackmodel.jpg"
+                    width="110px"/>
+                  </a>
+              </div>
+              <!-- END OF CHOOSING MODEL ICONS -->
+
+              <div class="mascara">
+                  <img class="lash1" id="lash1" src="lashes/black-lash1.png" width="495;" height="465;"/>
+              </div>
+
+              <div class="lipstick">
+                  <img class="lips" id="lip1" src="lips/blacklip1.png" width="495;" height="465;"/>
+                  <img class="lips" id="lip2" src="lips/blacklip2.png" width="495;" height="465;"/>
+                  <img class="lips" id="lip3" src="lips/blacklip3.png" width="495;" height="465;"/>
+                  <img class="lips" id="lip4" src="lips/blacklip4.png" width="495;" height="465;"/>
+                  <img class="lips" id="lip5" src="lips/blacklip5.png" width="495;" height="465;"/>
+              </div>
+
+
+              <!-- START OF BUTTONS -->
+              <div class="buttons">
+                  <h2 id="heading1">MASCARA</h2>
+                      <button id="mascarabutton">
+                          <img src='images/mascarafinal.png' width="200px;" />
+                          <h3>Infinity Lash Mascara</h3>
+                      </button>
+
+
+                  <h2 id="heading2">COLOR INTENSE LIQUID LIPSTICKS</h2>
+                      <div class="lip-buttons flex-container">
+                          <button id="lip1butt">
+                              <img src="lips/berryshimmer.png" width="200px"/>
+                              <h3>Berry Shimmer</h3>
+                          </button>
+
+                          <button id="lip2butt">
+                              <img src="lips/grapefruitsorbet.png" width="200px"/>
+                              <h3>Grapefruit Sorbet</h3>
+                          </button>
+
+                          <button id="lip3butt">
+                              <img src="lips/peanutbutter.png" width="200px"/>
+                              <h3>Peanut Butter</h3>
+                          </button>
+
+                          <button id="lip4butt">
+                              <img src="lips/pinkmacaron.png" width="200px"/>
+                              <h3>Pink Macaron</h3>
+                          </button>
+
+                          <button id="lip5butt">
+                              <img src="lips/roastedcherry.png" width="200px"/>
+                              <h3>Roasted Cherry</h3>
+                          </button>
+                      </div>
+
+              </div>
+              <!-- END OF BUTTONS -->
+
+              <button id="reset">RESET</button>
+              <button id="cart">ADD TO CART</button>
+
+          </div>
+      </section>
+
+
+
+
+
+
+
+      <script type="text/javascript">
+
+      // START OF OVERLAY NAV SCRIPT
+        $('#hamburger-icon').click(function() {
+            $(this).toggleClass('active');
+            $('#overlayNav').toggleClass('open').show();
+        });
+
+        $('#overlayNav li').on('click', function(){
+            $('#overlayNav').hide();
+            $('#overlayNav').toggleClass('open');
+            $('#hamburger-icon').removeClass("active");
+        });
+        // END OF OVERLAY NAV SCRIPT
+
+      $("#asian").show();
+      $("#white").hide();
+      $("#medium").hide();
+      $("#brown").hide();
+      $("#black").hide();
+      $("#ebony").hide();
+
+      $("#lash1").hide();
+
+      $("#lip1").hide();
+      $("#lip2").hide();
+      $("#lip3").hide();
+      $("#lip4").hide();
+      $("#lip5").hide();
+
+
+      $("#mascarabutton").click(function() {
+          $("#lash1").show();
+      });
+
+      $("#lip1butt").click(function() {
+          $("#lip1").show();
+          $("#lip2").hide();
+          $("#lip3").hide();
+          $("#lip4").hide();
+          $("#lip5").hide();
+      });
+
+      $("#lip2butt").click(function() {
+          $("#lip2").show();
+          $("#lip1").hide();
+          $("#lip3").hide();
+          $("#lip4").hide();
+          $("#lip5").hide();
+      });
+
+      $("#lip3butt").click(function() {
+          $("#lip3").show();
+          $("#lip1").hide();
+          $("#lip2").hide();
+          $("#lip4").hide();
+          $("#lip5").hide();
+      });
+
+      $("#lip4butt").click(function() {
+          $("#lip4").show();
+          $("#lip1").hide();
+          $("#lip2").hide();
+          $("#lip3").hide();
+          $("#lip5").hide();
+      });
+
+      $("#lip5butt").click(function() {
+          $("#lip5").show();
+          $("#lip1").hide();
+          $("#lip2").hide();
+          $("#lip3").hide();
+          $("#lip4").hide();
+      });
+
+
+
+      $("#reset").click(function() {
+        $("#lash1").hide();
+        $("#lip1").hide();
+        $("#lip2").hide();
+        $("#lip3").hide();
+        $("#lip4").hide();
+        $("#lip5").hide();
+
+      });
+
+
+      </script>
+
+  </body>
+
+</html>
